@@ -1,0 +1,3 @@
+Because of other deadlines to meet on this part time course, it was not possible to make any significant progress with this project last week.
+This week I(we) have started to consider and research various possibilities for the project. I've been looking mostly at using jQuery sliders and researching possible html5 features that can be included.
+A "real start" can happen this week.......
