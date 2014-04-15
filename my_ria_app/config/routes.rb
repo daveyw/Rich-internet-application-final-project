@@ -1,7 +1,12 @@
 MyRiaApp::Application.routes.draw do
+  resources :entries
+
+
+  get "raffle/index"
+
   get "home/index"
   resources :games
-
+  get "raffle/index"
   devise_for :users
 
   # The priority is based upon order of creation:

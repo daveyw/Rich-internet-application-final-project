@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
   <title>MyRiaApp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -11,11 +11,14 @@
         <ul>
           <li><%= link_to "Home", home_index_path %></li>
           <li><%= link_to "Games", games_path %></li>
+          <li><%= link_to "Raffle", raffle_index_path %></li>
           <li><%= link_to "Sign in", '#' %></li>
         </ul>
 
 </header>
-<%= yield %>
+<div id="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
