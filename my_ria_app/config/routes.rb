@@ -1,7 +1,4 @@
 MyRiaApp::Application.routes.draw do
-  resources :entries
-
-
   get "raffle/index"
 
   get "home/index"
