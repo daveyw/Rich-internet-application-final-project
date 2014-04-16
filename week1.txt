@@ -1,0 +1,3 @@
+I have been resarching this week in partiular i focuesd on Javascript Image sliders for our shop. I found a javascript slider that could be very usful in our project.I also looked into incorperating some Html 5 canvas charts  features in our project
+
+
