@@ -49,6 +49,12 @@ GEM
     execjs (2.0.2)
     hike (1.2.3)
     i18n (0.6.1)
+    jasmine (2.0.0)
+      jasmine-core (~> 2.0.0)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+    jasmine-core (2.0.0)
     journey (1.0.4)
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
@@ -59,7 +65,12 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.9.2)
+<<<<<<< HEAD
     orm_adapter (0.5.0)
+=======
+    orm_adapter (0.4.0)
+    phantomjs (1.9.7.0)
+>>>>>>> 633bf0e0ed27588b56108361a3fca8f0077eee8a
     polyglot (0.3.4)
     rack (1.4.5)
     rack-cache (1.2)
@@ -117,7 +128,11 @@ DEPENDENCIES
   angularjs-rails
   coffee-rails (~> 3.2.1)
   devise (>= 2.1.2)
+<<<<<<< HEAD
   execjs (~> 2.0.2)
+=======
+  jasmine
+>>>>>>> 633bf0e0ed27588b56108361a3fca8f0077eee8a
   jquery-rails
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

@@ -9,5 +9,11 @@
 //
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
+<<<<<<< HEAD
+=======
+//
+//= require jquery
+//= require jquery_ujs
+>>>>>>> 633bf0e0ed27588b56108361a3fca8f0077eee8a
 //= require angular
 //= require_tree .
