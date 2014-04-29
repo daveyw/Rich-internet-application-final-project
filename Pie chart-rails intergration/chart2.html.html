@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+
+                title: {
+                    text: "The differnt types of species in Africa in numbers "
+                },
+                data: [//array of dataSeries
+                  { //dataSeries object
+
+                      /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                      type: "pie",
+                      dataPoints: [
+                      { label: "Insects", y: 100000 },
+                      { label: "Fish", y: 3000 },
+                      { label: "Bird", y: 2600 },
+                      { label: "Mammals", y: 2600 },
+                      { label: "Amphibians", y: 238 },
+					  { label: "Reptiles", y: 58 }
+					  
+
+                      ]
+                  }
+                ]
+            });
+
+            chart.render();
+        }
+    </script>
+	
+
+    
+
+    <script src="canvasjs.min.js"></script>
+</head>
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+</body>
+</html>

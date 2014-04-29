@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="54" version="2.0">
+<workbench progressCount="53" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="683" x="683" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -17,11 +17,12 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.css" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.erb.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.aptana.editor.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.aptana.editor.ruby" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.html" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.ruby" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -35,35 +36,25 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.aptana.editor.html" name="index1.html" partName="index1.html" title="index1.html" tooltip="C:\Users\David\angulardemo\index1.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/angulardemo/index1.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="5"/>
-</editor>
-<editor id="com.aptana.editor.html" name="index.html" partName="index.html" title="index.html" tooltip="C:\Users\David\angulardemo\index.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/angulardemo/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.aptana.editor.js" name="OrderFormController.js" partName="OrderFormController.js" title="OrderFormController.js" tooltip="C:\Users\David\angulardemo\js\OrderFormController.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/angulardemo/js/OrderFormController.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.erb.html" name="index.html.erb" partName="index.html.erb" title="index.html.erb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\app\views\games\index.html.erb" workbook="DefaultEditorWorkbook">
+<editor id="com.aptana.editor.erb.html" name="index.html.erb" partName="index.html.erb" title="index.html.erb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\app\views\games\index.html.erb" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/games/index.html.erb"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="23" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1423" selectionTopPixel="405"/>
 </editor>
-<editor id="com.aptana.editor.css" name="css.css" partName="css.css" title="css.css" tooltip="C:\Users\David\Desktop\3d box spinner\css-3D-image-slider\css\css.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/Desktop/3d%20box%20spinner/css-3D-image-slider/css/css.css"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Gemfile.lock" partName="Gemfile.lock" title="Gemfile.lock" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\Gemfile.lock" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/Gemfile.lock"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="com.aptana.editor.erb.html" name="application.html.erb" partName="application.html.erb" title="application.html.erb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\app\views\layouts\application.html.erb" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/layouts/application.html.erb"/>
+<editor id="com.aptana.editor.ruby" name="routes.rb" partName="routes.rb" title="routes.rb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\config\routes.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/config/routes.rb"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.aptana.editor.js" name="jquery.js" partName="jquery.js" title="jquery.js" tooltip="C:\Users\David\Desktop\Ria project work\3d box spinner\css-3D-image-slider\js\jquery.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/David/Desktop/Ria%20project%20work/3d%20box%20spinner/css-3D-image-slider/js/jquery.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2" selectionTopPixel="30"/>
 </editor>
 </editors>
 <views>
@@ -98,7 +89,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.aptana.terminal.views.terminal:my_ria_app" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.js" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -167,7 +158,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19982994" ratioLeft="235" ratioRight="941" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.25239852" ratioLeft="342" ratioRight="1013" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.75" ratioLeft="477" ratioRight="159" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.aptana.terminal.views.terminal:my_ria_app" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -211,6 +202,13 @@
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" uri="file:/C:/Users/David/Desktop/3d%20box%20spinner/css-3D-image-slider/css/css.css"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/layouts/application.html.erb"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/games/index.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/Gemfile.lock"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/Gemfile"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/C:/Users/David/angulardemo/index1.html"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/games/index.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/Gemfile.lock"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/config/routes.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/C:/Users/David/Desktop/Ria%20project%20work/3d%20box%20spinner/css-3D-image-slider/js/jquery.js"/>
 </editors>
 <item historyLabel="routes.rb" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -242,8 +240,68 @@
 <item historyLabel="application.html.erb" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="index.html.erb" index="7">
-<position info="not_deleted" x="1043" y="0"/>
+<item historyLabel="index.html.erb" index="7">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="Gemfile.lock" index="8">
+<position/>
+</item>
+<item historyLabel="Gemfile" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Gemfile.lock" index="8">
+<position info="not_deleted" x="2983" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="7">
+<position info="not_deleted" x="0" y="625"/>
+</item>
+<item historyLabel="Gemfile.lock" index="8">
+<position info="not_deleted" x="2983" y="0"/>
+</item>
+<item historyLabel="index1.html" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="11">
+<position info="not_deleted" x="1195" y="0"/>
+</item>
+<item historyLabel="Gemfile.lock" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="11">
+<position/>
+</item>
+<item historyLabel="Gemfile.lock" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Gemfile.lock" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Gemfile.lock" index="12">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="11">
+<position/>
+</item>
+<item historyLabel="Gemfile.lock" index="12">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="11">
+<position/>
+</item>
+<item historyLabel="Gemfile.lock" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="11">
+<position/>
+</item>
+<item historyLabel="routes.rb" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="11">
+<position/>
+</item>
+<item active="true" historyLabel="jquery.js" index="14">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -262,14 +320,26 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jquery.js" tooltip="C:\Users\David\Desktop\Ria project work\3d box spinner\css-3D-image-slider\js\jquery.js">
+<persistable uri="file:/C:/Users/David/Desktop/Ria%20project%20work/3d%20box%20spinner/css-3D-image-slider/js/jquery.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\config\routes.rb">
+<persistable uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/config/routes.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Gemfile.lock" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\Gemfile.lock">
+<persistable uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/Gemfile.lock"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\app\views\games\index.html.erb">
+<persistable uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/games/index.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="Gemfile" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\Gemfile">
+<persistable uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/Gemfile"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="application.html.erb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\app\views\layouts\application.html.erb">
 <persistable uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/layouts/application.html.erb"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="css.css" tooltip="C:\Users\David\Desktop\3d box spinner\css-3D-image-slider\css\css.css">
 <persistable uri="file:/C:/Users/David/Desktop/3d%20box%20spinner/css-3D-image-slider/css/css.css"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\app\views\games\index.html.erb">
-<persistable uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/app/views/games/index.html.erb"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="OrderFormController.js" tooltip="C:\Users\David\angulardemo\js\OrderFormController.js">
 <persistable uri="file:/C:/Users/David/angulardemo/js/OrderFormController.js"/>
@@ -279,9 +349,6 @@
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index1.html" tooltip="C:\Users\David\angulardemo\index1.html">
 <persistable uri="file:/C:/Users/David/angulardemo/index1.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="C:\Users\David\Rich-internet-application-final-project\my_ria_app\config\routes.rb">
-<persistable uri="file:/C:/Users/David/Rich-internet-application-final-project/my_ria_app/config/routes.rb"/>
 </file>
 </mruList>
 </workbench>
