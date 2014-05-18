@@ -1,10 +1,23 @@
 MyRiaApp::Application.routes.draw do
+
+
+  namespace :api do
+     resources :shares
+  end
+  get '/dashboard' => 'home#dashboard'
+  devise_scope :user do
+     get '/api/current_user' => 'users/sessions#show_current_user', as: 'show_current_user'
+     post '/api/check/is_user' => 'users/users#is_user', as: 'is_user'
+     end
   get "raffle/index"
 
   get "home/index"
-  resources :games
+
   get "raffle/index"
+  get 'games', to: 'games#index'
+  get 'games/who_eats', to: 'games#who_eats'
   devise_for :users
+  root :to => 'home#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -55,7 +68,6 @@ MyRiaApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
