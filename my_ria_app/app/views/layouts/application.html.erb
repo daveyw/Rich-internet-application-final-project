@@ -12,14 +12,20 @@
 </head>
 <body>
 <header>
-        <ul>
-          <li><%= link_to "Home", home_index_path %></li>
-          <li><%= link_to "Games", games_path %></li>
-          <li><%= link_to "Videos", games_videos_path %></li>
-          <li><%= link_to "Who eats what?", games_who_eats_path %></li>
-          <li><%= link_to "Raffle", raffle_index_path %></li>
-          <li><%= link_to "Sign in", new_user_session_path %></li>
-        </ul>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Go Wild!</a>
+    <ul class="nav">
+      <li class="active"><%= link_to "Home", home_index_path %></li>
+      <li><%= link_to "Games", games_path %></li>
+      <li><%= link_to "Videos", games_videos_path %></li>
+      <li><%= link_to "Who eats what?", games_who_eats_path %></li>
+      <li><%= link_to "Raffle", raffle_index_path %></li>
+      <li><%= link_to "Sign in", new_user_session_path %></li>
+    </ul>
+  </div>
+</div>
 
 </header>
 <div id="container">
