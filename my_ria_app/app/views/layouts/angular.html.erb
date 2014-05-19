@@ -10,19 +10,7 @@
  </head>
 <body>
 <header>
-  <ul>
-    <% if user_signed_in? %>
 
-        <li><%= link_to "Home", home_index_path %></li>
-        <li><%= link_to "Games", games_path %></li>
-        <li><%= link_to "Raffle", raffle_index_path %></li>
-        <li><a href="<%= destroy_user_session_path %>" data-method="delete">Sign out</a></li>
-
-    <% else %>
-        <li><a href="<%= new_user_session_path %>">Sign in </a></li>
-        <li><a href="<%= new_user_registration_path %>">Sign up</a></li>
-    <% end %>
-  </ul>
 
 </header>
  <div class="container">

@@ -18,6 +18,7 @@
     <a class="brand" href="#">Go Wild!</a>
     <ul class="nav">
       <li class="active"><%= link_to "Home", home_index_path %></li>
+      <li><%= link_to "News", dashboard_path %></li>
       <li><%= link_to "Games", games_path %></li>
       <li><%= link_to "Videos", games_videos_path %></li>
       <li><%= link_to "Who eats what?", games_who_eats_path %></li>
@@ -28,13 +29,14 @@
 </div>
 
 </header>
-<div id="container">
-  <%= yield %>
-</div>
+
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script src="//releases.flowplayer.org/5.4.0/flowplayer.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+<%= yield %>
+
 <%= javascript_include_tag "application" %>
 </body>
 </html>
