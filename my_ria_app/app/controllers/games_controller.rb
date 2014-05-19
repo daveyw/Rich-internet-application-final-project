@@ -6,4 +6,7 @@ class GamesController < ApplicationController
   def who_eats
 
   end
+
+  def videos
+  end
 end

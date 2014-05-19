@@ -11,13 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140415183111) do
+ActiveRecord::Schema.define(:version => 20140518161446) do
 
   create_table "entries", :force => true do |t|
     t.string   "name"
     t.boolean  "winner"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "screencasts", :force => true do |t|
+    t.string   "title"
+    t.text     "summary"
+    t.string   "duration"
+    t.string   "link"
+    t.datetime "published_at"
+    t.string   "source"
+    t.string   "video_url"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "shares", :force => true do |t|
+    t.integer  "from_user_id"
+    t.integer  "to_user_id"
+    t.string   "to_email"
+    t.datetime "created_at",   :null => false
+    t.string   "url"
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "users", :force => true do |t|

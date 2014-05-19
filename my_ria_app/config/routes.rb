@@ -1,14 +1,22 @@
 MyRiaApp::Application.routes.draw do
 
 
-  namespace :api do
-     resources :shares
+
+  scope :api do
+    get "/screencasts(.:format)" => "screencasts#index"
+    get "/screencasts/:id(.:format)" => "screencasts#show"
   end
+
+  get "games/videos"
+
+ # namespace :api do
+  #   resources :shares
+  #end
   get '/dashboard' => 'home#dashboard'
-  devise_scope :user do
-     get '/api/current_user' => 'users/sessions#show_current_user', as: 'show_current_user'
-     post '/api/check/is_user' => 'users/users#is_user', as: 'is_user'
-     end
+  #devise_scope :user do
+   #  get '/api/current_user' => 'users/sessions#show_current_user', as: 'show_current_user'
+    # post '/api/check/is_user' => 'users/users#is_user', as: 'is_user'
+     #end
   get "raffle/index"
 
   get "home/index"

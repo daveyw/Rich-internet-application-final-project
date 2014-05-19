@@ -2,8 +2,12 @@
 <html>
 <head>
   <title>MyRiaApp</title>
+  <link href="//releases.flowplayer.org/5.4.0/skin/minimalist.css" rel="stylesheet">
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+
+  <script src="//releases.flowplayer.org/5.4.0/flowplayer.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -11,6 +15,7 @@
         <ul>
           <li><%= link_to "Home", home_index_path %></li>
           <li><%= link_to "Games", games_path %></li>
+          <li><%= link_to "Videos", games_videos_path %></li>
           <li><%= link_to "Who eats what?", games_who_eats_path %></li>
           <li><%= link_to "Raffle", raffle_index_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
@@ -20,6 +25,10 @@
 <div id="container">
   <%= yield %>
 </div>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="//releases.flowplayer.org/5.4.0/flowplayer.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+<%= javascript_include_tag "application" %>
 </body>
 </html>
