@@ -24,6 +24,9 @@ MyRiaApp::Application.routes.draw do
   get "raffle/index"
   get 'games', to: 'games#index'
   get 'games/who_eats', to: 'games#who_eats'
+  get 'games/habitats', to: 'games#habitats'
+  get 'games/memory', to: 'games#memory'
+
   devise_for :users
   root :to => 'home#index'
 

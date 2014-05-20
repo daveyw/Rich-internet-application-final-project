@@ -3,7 +3,7 @@ $(document).ready(main);
 var numCorrectas=0;
 var numIncorrectas=0;
 function main(){
-    
+
     var res =$(".respuesta");
     res.draggable();
     $(".preg").droppable({drop:dropPregunta});

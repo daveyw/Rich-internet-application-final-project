@@ -9,4 +9,12 @@ class GamesController < ApplicationController
 
   def videos
   end
+
+  def habitats
+
+  end
+
+  def memory
+
+  end
 end
