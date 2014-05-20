@@ -1,401 +1,47 @@
-<%= stylesheet_link_tag "demo" %>
-<%= stylesheet_link_tag "style" %>
-<%= stylesheet_link_tag "custom" %>
-<%= stylesheet_link_tag "demoslice" %>
-<%= stylesheet_link_tag "slicebox" %>
-<%= javascript_include_tag "modernizr.custom.46884" %>
-
-<h2> Wildlife animals </h2>
-
-<br />
-<div class="container">
+<%= stylesheet_link_tag "style_countries" %>
+<%= javascript_include_tag "countries" %>
 
 
+<section id="preguntas">
+  <article class="preg">
+    Japan
+  </article>
+
+  <article class="preg">
+    United states
+  </article>
+
+  <article class="preg">
+    France
+  </article>
+
+  <article class="preg">
+    United kingdom
+  </article>
+
+  <article class="preg">
+    China
+  </article>
+
+  <article class="preg">
+    Germany
+  </article>
 
 
-  <div class="wrapper">
 
-    <ul id="sb-slider" class="sb-slider">
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/1.jpg" %></a>
-        <div class="sb-description">
-          <h3>Creative Lifesavers</h3>
-        </div>
-      </li>
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/2.jpg" %></a>
-        <div class="sb-description">
-          <h3>Honest Entertainer</h3>
-        </div>
-      </li>
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/3.jpg" %></a>
-        <div class="sb-description">
-          <h3>Brave Astronaut</h3>
-        </div>
-      </li>
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/4.jpg" %></a>
-        <div class="sb-description">
-          <h3>Affectionate Decision Maker</h3>
-        </div>
-      </li>
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/5.jpg" %></a>
-        <div class="sb-description">
-          <h3>Faithful Investor</h3>
-        </div>
-      </li>
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/6.jpg" %></a>
-        <div class="sb-description">
-          <h3>Groundbreaking Artist</h3>
-        </div>
-      </li>
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/7.jpg" %></a>
-        <div class="sb-description">
-          <h3>Party Animals</h3>
-        </div>
-      </li>
-
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/8.jpg" %></a>
-        <div class="sb-description">
-          <h3>Selfless Philantropist</h3>
-        </div>
-      </li>
-      <li>
-        <a href="#" target="_blank"><%= image_tag "images_slice/9.jpg" %></a>
-        <div class="sb-description">
-          <h3>Ballroom Dancer</h3>
-        </div>
-      </li>
-    </ul>
-
-    <div id="shadow" class="shadow"></div>
-
-    <div id="nav-arrows" class="nav-arrows">
-      <a href="#">Next</a>
-      <a href="#">Previous</a>
-    </div>
-
-  </div><!-- /wrapper -->
-
-
-</div>
-<%= javascript_include_tag "jquery.slicebox" %>
-
-<script type="text/javascript">
-    $(function() {
-
-        var Page = (function() {
-
-            var $navArrows = $( '#nav-arrows' ).hide(),
-                    $shadow = $( '#shadow' ).hide(),
-                    slicebox = $( '#sb-slider' ).slicebox( {
-                        onReady : function() {
-
-                            $navArrows.show();
-                            $shadow.show();
-
-                        },
-                        orientation : 'r',
-                        cuboidsRandom : true,
-                        disperseFactor : 30
-                    } ),
-
-                    init = function() {
-
-                        initEvents();
-
-                    },
-                    initEvents = function() {
-
-                        // add navigation events
-                        $navArrows.children( ':first' ).on( 'click', function() {
-
-                            slicebox.next();
-                            return false;
-
-                        } );
-
-                        $navArrows.children( ':last' ).on( 'click', function() {
-
-                            slicebox.previous();
-                            return false;
-
-                        } );
-
-                    };
-
-            return { init : init };
-
-        })();
-
-        Page.init();
-
-    });
-</script>
-
-
-<script type="text/javascript">
-    window.onload = function () {
-        var chart = new CanvasJS.Chart("chartContainer", {
-
-            title: {
-                text: "The differnt types of species in Africa in numbers "
-            },
-            data: [//array of dataSeries
-                { //dataSeries object
-
-                    /*** Change type "column" to "bar", "area", "line" or "pie"***/
-                    type: "pie",
-                    dataPoints: [
-                        { label: "Insects", y: 100000 },
-                        { label: "Fish", y: 3000 },
-                        { label: "Bird", y: 2600 },
-                        { label: "Mammals", y: 2600 },
-                        { label: "Amphibians", y: 238 },
-                        { label: "Reptiles", y: 58 }
-
-
-                    ]
-                }
-            ]
-        });
-
-        chart.render();
-    }
-</script>
-
-<%= javascript_include_tag "canvasjs.min" %>
-
-<div id="chartContainer" style="height: 300px; width: 100%;">
-</div>
-
-<section>
-<ul class="lb-album">
-<li>
-  <a href="#image-1">
-    <%= image_tag "thumbs/1.jpg" %>
-    <span>Tiger</span>
-  </a>
-  <div class="lb-overlay" id="image-1">
-    <a href="#page" class="lb-close">x Close</a>
-    <%= image_tag "full/1.jpg" %>
-    <div>
-      <h3>Tiger </h3>
-      <p>The tiger is the largest cat species, reaching a total body length of up to 3.38 m over curves and weighing up to 388.7 kg in the wild.</p>
-    </div>
+  <div id="respuestas">
+    <%= image_tag "level1/china.png", :class => "respuesta" , :alt => "china"%>
+    <%= image_tag "level1/germany.png", :class => "respuesta" , :alt => "germany"%>
+    <%= image_tag "level1/england.png", :class => "respuesta", :alt => "england" %>
+    <%= image_tag "level1/japan.png", :class => "respuesta" , :alt => "japan"%>
+    <%= image_tag "level1/usa.png", :class => "respuesta" , :alt => "usa"%>
+    <%= image_tag "level1/france.png", :class => "respuesta" , :alt => "france"%>
 
   </div>
-</li>
-<li>
-  <a href="#image-2">
-    <%= image_tag "thumbs/2.jpg" %>
-    <span> Eagle</span>
-  </a>
-  <div class="lb-overlay" id="image-2">
-    <%= image_tag "full/2.jpg" %>
-    <div>
-      <h3>Eagle </h3>
-      <p>The Bald Eagle is a bird of prey found in North America. The Bald Eagle is an opportunistic feeder which subsists mainly on fish.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-3">
-    <%= image_tag "thumbs/3.jpg" %>
-    <span>Butterfly</span>
-  </a>
-  <div class="lb-overlay" id="image-3">
-    <%= image_tag "full/3.jpg" %>
-    <div>
-      <h3>Butterfly </h3>
-      <p>Butterflies are a chiefly diurnal group of the order Lepidoptera (which also includes moths). Adults have large, often brightly coloured wings, and conspicuous, fluttering flight.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-4">
-    <%= image_tag "thumbs/4.jpg" %>
-    <span>Lion</span>
-  </a>
-  <div class="lb-overlay" id="image-4">
-    <%= image_tag "full/4.jpg" %>
-    <div>
-      <h3>Lion</h3>
-      <p>The lion (Panthera leo) is one of the four big cats in the genus Panthera and a member of the family Felidae. With some males exceeding 250 kg (550 lb) in weight</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-5">
-    <%= image_tag "thumbs/5.jpg" %>
-    <span>Owl</span>
-  </a>
-  <div class="lb-overlay" id="image-5">
-    <%= image_tag "full/5.jpg" %>
-    <div>
-      <h3>Owl</h3>
-      <p>Owls, birds of the order Strigiformes, include about 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-6">
-    <%= image_tag "thumbs/6.jpg" %>
-    <span>Raccoon</span>
-  </a>
-  <div class="lb-overlay" id="image-6">
-    <%= image_tag "full/6.jpg" %>
-    <div>
-      <h3>Raccoon </h3>
-      <p>is a medium-sized mammal native to North America. The raccoon is the largest of the procyonid family, having a body length of 40 to 70 cm (16 to 28 in) and a body weight of 3.5 to 9 kg (8 to 20 lb).</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-7">
-    <%= image_tag "thumbs/7.jpg" %>
-    <span>Polar bear</span>
-  </a>
-  <div class="lb-overlay" id="image-7">
-    <%= image_tag "full/7.jpg" %>
-    <div>
-      <h3>polar bear</h3>
-      <p>The polar bear is a carnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-8">
-    <%= image_tag "thumbs/8.jpg" %>
-    <span>Zebra</span>
-  </a>
-  <div class="lb-overlay" id="image-8">
-    <%= image_tag "full/8.jpg" %>
-    <div>
-      <h3>Zebra </h3>
-      <p>Zebras are several species of African equids united by their distinctive black and white stripes. Their stripes come in different patterns, unique to each individual. They are generally social animals that live in small harems to large herds.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-9">
-    <%= image_tag "thumbs/9.jpg" %>
-    <span>Monkey</span>
-  </a>
-  <div class="lb-overlay" id="image-9">
-    <%= image_tag "full/9.jpg" %>
-    <div>
-      <h3>Monkey </h3>
-      <p>A monkey is any nonhuman primate,Thus defined, there are three type of monkeys: (1) non-human hominoids (also known as apes), (2) old world monkeys, and (3) new world monkeys. However, only the latter two are currently considered "monkeys" by most biologists.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-10">
-    <%= image_tag "thumbs/10.jpg" %>
-    <span>Horse</span>
-  </a>
-  <div class="lb-overlay" id="image-10">
-    <%= image_tag "full/10.jpg" %>
-    <div>
-      <h3>Horse </h3>
-      <p> The horse has evolved over the past 45 to 55 million years from a small multi-toed creature into the large, single-toed animal of today. Humans began to domesticate horses around 4000 BC</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-<li>
-  <a href="#image-11">
-    <%= image_tag "thumbs/11.jpg" %>
-    <span>Elephant</span>
-  </a>
-  <div class="lb-overlay" id="image-11">
-    <%= image_tag "full/11.jpg" %>
-    <div>
-      <h3>Elephant </h3>
-      <p>Elephants are large mammals of the family Elephantidae and the order Proboscidea. Traditionally, two species are recognised, the African elephant and the Asian elephant</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
 
-
-
-<li>
-  <a href="#image-13">
-    <%= image_tag "thumbs/13.jpg" %>
-    <span>Shark</span>
-  </a>
-  <div class="lb-overlay" id="image-13">
-    <%= image_tag "full/13.jpg" %>
-    <div>
-      <h3>Shark</h3>
-      <p>The great white shark, also known as the great white, white pointer, white shark, or white death, is a species of large lamniform shark which can be found in the coastal surface waters of all the major oceans</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-
-
-<li>
-  <a href="#image-14">
-    <%= image_tag "thumbs/14.jpg" %>
-    <span>leopard</span>
-  </a>
-  <div class="lb-overlay" id="image-14">
-    <%= image_tag "full/14.jpg" %>
-    <div>
-      <h3>leopard </h3>
-      <p>The leopard is a member of the Felidae family with a wide range in some parts of Africa and tropical Asia, from Siberia, South and West Asia to across most of sub-Saharan Africa.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-
-
-
-<li>
-  <a href="#image-15">
-    <%= image_tag "thumbs/15.jpg" %>
-    <span>Snake</span>
-  </a>
-  <div class="lb-overlay" id="image-15">
-    <%= image_tag "full/15.jpg" %>
-    <div>
-      <h3>Snake</h3>
-      <p>Snakes are elongated, legless, carnivorous reptiles of the suborder Serpentes that can be distinguished from legless lizards by their lack of eyelids and external ears.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-
-
-<li>
-  <a href="#image-16">
-    <%= image_tag "thumbs/16.jpg" %>
-    <span>Giraffe</span>
-  </a>
-  <div class="lb-overlay" id="image-16">
-    <%= image_tag "full/16.jpg" %>
-    <div>
-      <h3>Giraffe</h3>
-      <p>The giraffe is an African even-toed ungulate mammal, the tallest living terrestrial animal and the largest ruminant. Its species name refers to its camel-like appearance and the patches of color on its fur.</p>
-    </div>
-    <a href="#page" class="lb-close">x Close</a>
-  </div>
-</li>
-</ul>
 </section>
+<div id="resultados">
+
+</div>
+
+

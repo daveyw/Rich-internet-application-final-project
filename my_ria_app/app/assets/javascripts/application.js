@@ -26,6 +26,7 @@
 //= require angular
 //= require angular-route
 //= require angular-resource
+//= require jquery.ui.all
 //= require app
 //= require_tree ./angular
 //= require_tree .
