@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	function loadJSONmale()
+	function savanna()
 	{
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange=function()
@@ -7,16 +7,16 @@
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{
 					var JSONObject = JSON.parse(xmlhttp.responseText);
-					document.getElementById("name").innerHTML = "<span style='font-weight:bold'>Name: </span>" + JSONObject.maleName;
-					document.getElementById("category").innerHTML = "<span style='font-weight:bold'>Category: </span>" +  JSONObject.maleCategory;
-					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>Biography: </span>" +  JSONObject.maleBio;
+					document.getElementById("name").innerHTML = "<span style='font-weight:bold'>Name: </span>" + JSONObject.savannaName;
+					document.getElementById("category").innerHTML = "<span style='font-weight:bold'>Habitate Type: </span>" +  JSONObject.savannaType;
+					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>About Habitate: </span>" +  JSONObject.aboutSavanna;
 				}
 		}
-		xmlhttp.open("GET","assets/habitats.json",true);
+		xmlhttp.open("GET","../assets/habitats.json",true);
 		xmlhttp.send();
 	}
 	
-	function loadJSONfemale()
+	function jungle()
 	{
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange=function()
@@ -24,28 +24,48 @@
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{
 					var JSONObject = JSON.parse(xmlhttp.responseText);
-					document.getElementById("name").innerHTML = "<span style='font-weight:bold'>Name: </span>" + JSONObject.femaleName;
-					document.getElementById("category").innerHTML = "<span style='font-weight:bold'>Category: </span>" + JSONObject.femaleCategory;
-					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>Biography: </span>" + JSONObject.femaleBio;
+					document.getElementById("name").innerHTML = "<span style='font-weight:bold'>Name: </span>" + JSONObject.jungleName;
+					document.getElementById("category").innerHTML = "<span style='font-weight:bold'>Category: </span>" + JSONObject.jungleType;
+					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>Biography: </span>" + JSONObject.aboutJungle;
 				}
 		}
-		xmlhttp.open("GET","assets/coaches.json",true);
+		xmlhttp.open("GET","../assets/habitats.json",true);
+		xmlhttp.send();
+	}
+	
+	function desert()
+	{
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					var JSONObject = JSON.parse(xmlhttp.responseText);
+					document.getElementById("name").innerHTML = "<span style='font-weight:bold'>Name: </span>" + JSONObject.desertName;
+					document.getElementById("category").innerHTML = "<span style='font-weight:bold'>Category: </span>" + JSONObject.desertType;
+					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>Biography: </span>" + JSONObject.aboutDesert;
+				}
+		}
+		xmlhttp.open("GET","../assets/habitats.json",true);
 		xmlhttp.send();
 	}
 </script>
 
 <div class="row">
 	<div class="large-12 columns">
-		<h1 class="text-center heading1">Click on a coach to view their profile</h1>
+		<h1 class="text-center heading1">Click on a Picture to learn about the Habitate</h1>
 	</div>
 </div>
 
 <div class="row">
 	<div class="large-6 columns text-center">	
-		<img src="../assets/ajax_images/savanna.jpg" alt="Savanna Image" title="Savanna" width="300" height="200" onclick="loadJSONmale()" />
+		<img src="../assets/ajax_images/savanna.jpg" alt="Savanna Image" title="Savanna" width="300" height="200" onclick="savanna()" />
 	</div>
 	<div class="large-6 columns text-center">
-		<img class="coachesPics" src="assets/desert.jpg" alt="Female Coach" title="Female Coach" width="300" height="300" onclick="loadJSONfemale()" />
+		<img src="../assets/ajax_images/jungle.jpg" alt="Jungle Image" title="Jungle" width="300" height="200" onclick="jungle()" />
+	</div>
+	<div class="large-6 columns text-center">
+		<img src="../assets/ajax_images/desert.jpg" alt="Desert Image" title="Desert" width="300" height="200" onclick="desert()" />
 	</div>
 </div>
 
