@@ -12,7 +12,7 @@
 					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>Biography: </span>" +  JSONObject.maleBio;
 				}
 		}
-		xmlhttp.open("GET","assets/coaches.json",true);
+		xmlhttp.open("GET","assets/habitats.json",true);
 		xmlhttp.send();
 	}
 	
@@ -41,9 +41,8 @@
 </div>
 
 <div class="row">
-	<div class="large-6 columns text-center">
-		
-		<img class="coachesPics" src="assets/savanna.jpg" alt="Male Coach" title="Male Coach" width="300" height="200" onclick="loadJSONmale()" />	
+	<div class="large-6 columns text-center">	
+		<img src="../assets/ajax_images/savanna.jpg" alt="Savanna Image" title="Savanna" width="300" height="200" onclick="loadJSONmale()" />
 	</div>
 	<div class="large-6 columns text-center">
 		<img class="coachesPics" src="assets/desert.jpg" alt="Female Coach" title="Female Coach" width="300" height="300" onclick="loadJSONfemale()" />
