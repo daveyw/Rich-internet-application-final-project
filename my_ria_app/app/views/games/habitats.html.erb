@@ -1,1 +1,58 @@
-<h1>hi enda ya bollox</h1>
+<script type="text/javascript">
+	function loadJSONmale()
+	{
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					var JSONObject = JSON.parse(xmlhttp.responseText);
+					document.getElementById("name").innerHTML = "<span style='font-weight:bold'>Name: </span>" + JSONObject.maleName;
+					document.getElementById("category").innerHTML = "<span style='font-weight:bold'>Category: </span>" +  JSONObject.maleCategory;
+					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>Biography: </span>" +  JSONObject.maleBio;
+				}
+		}
+		xmlhttp.open("GET","assets/coaches.json",true);
+		xmlhttp.send();
+	}
+	
+	function loadJSONfemale()
+	{
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					var JSONObject = JSON.parse(xmlhttp.responseText);
+					document.getElementById("name").innerHTML = "<span style='font-weight:bold'>Name: </span>" + JSONObject.femaleName;
+					document.getElementById("category").innerHTML = "<span style='font-weight:bold'>Category: </span>" + JSONObject.femaleCategory;
+					document.getElementById("bio").innerHTML = "<span style='font-weight:bold'>Biography: </span>" + JSONObject.femaleBio;
+				}
+		}
+		xmlhttp.open("GET","assets/coaches.json",true);
+		xmlhttp.send();
+	}
+</script>
+
+<div class="row">
+	<div class="large-12 columns">
+		<h1 class="text-center heading1">Click on a coach to view their profile</h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-6 columns text-center">
+		<img class="coachesPics" src="assets/savanna.jpg" alt="Male Coach" title="Male Coach" width="300" height="300" onclick="loadJSONmale()" />	
+	</div>
+	<div class="large-6 columns text-center">
+		<img class="coachesPics" src="assets/desert.jpg" alt="Female Coach" title="Female Coach" width="300" height="300" onclick="loadJSONfemale()" />
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-12 columns">
+		<p id="name"></p>
+		<p id="category"></p>	
+		<p id="bio"></p>
+	</div>
+</div>
