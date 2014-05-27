@@ -51,28 +51,28 @@
 	}
 </script>
 
-<div class="row">
-	<div class="large-12 columns">
-		<h1 class="text-center heading1">Click on a Picture to learn about the Habitate</h1>
+<div>
+	<div class="row">
+		<p id="habitatsHeader">Click on a Picture to Learn about the Habitat</p>
 	</div>
 </div>
 
 <div class="row">
-	<div class="large-6 columns text-center">	
-		<img src="../assets/ajax_images/savanna.jpg" alt="Savanna Image" title="Savanna" width="300" height="200" onclick="savanna()" />
-	</div>
-	<div class="large-6 columns text-center">
-		<img src="../assets/ajax_images/jungle.jpg" alt="Jungle Image" title="Jungle" width="300" height="200" onclick="jungle()" />
-	</div>
-	<div class="large-6 columns text-center">
-		<img src="../assets/ajax_images/desert.jpg" alt="Desert Image" title="Desert" width="300" height="200" onclick="desert()" />
+	<div id="habitatsImages">
+	<img class="span4 habitatsPictures" src="../assets/ajax_images/savanna.jpg" alt="Savanna Image" title="Savanna" width="300" height="200" onclick="savanna()" />
+	
+	
+	<img class="span4 habitatsPictures" src="../assets/ajax_images/jungle.jpg" alt="Jungle Image" title="Jungle" width="300" height="200" onclick="jungle()" />
+	
+	
+	<img class="span4 habitatsPictures" src="../assets/ajax_images/desert.jpg" alt="Desert Image" title="Desert" width="300" height="200" onclick="desert()" />
 	</div>
 </div>
 
-<div class="row">
-	<div class="large-12 columns">
-		<p id="name"></p>
-		<p id="category"></p>	
-		<p id="bio"></p>
-	</div>
+
+<div id="textArea">
+	<p class="habitatText" id="name"></p>
+	<p class="habitatText" id="category"></p>	
+	<p class="habitatText" id="bio"></p>
 </div>
+

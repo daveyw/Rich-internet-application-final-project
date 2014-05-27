@@ -1,0 +1,33 @@
+#habitatsHeader {
+	text-align: center;
+	font-size: 5em;
+	color: #000;
+	margin: 0.2em 0 0.5em 0;
+	line-height: 1em;
+}
+
+#habitatsImages {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.habitatsPictures {
+	margin-bottom: 2em;
+	border-radius: 1em;
+}
+
+#textArea {
+	clear: both;
+}
+
+.habitatText {
+	display: block;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2em;
+	line-height: 150%;
+	color: #000;
+}
